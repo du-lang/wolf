@@ -1,0 +1,407 @@
+nav{
+    background-color: transparent;
+    height: 50px;
+}
+
+
+p,span,li,div{
+    font-family: 微软雅黑;
+}
+
+
+#banner{
+    background-color:transparent;/*将banner的背景颜色设置成透明transparent，在显示背景图片的时候效果会好一点*/
+    height: 600px;
+}
+
+#banner .sub-heading{
+    color: white;
+}
+header{
+    background: rgba(0,0,0,0.3);
+}
+
+/*表示nav标签的子元素ul标签*/
+nav ul{
+    list-style: none;
+    float: right;
+}
+
+nav ul li{
+    float: left;
+    /*设置属性将nav标签内部的ul子元素li标签排列在同一行上*/
+    display: inline-block;
+    /*指定行高*/
+    line-height: 50px;
+    margin-left: 20px;
+}
+
+/*表示nav标签的子元素ul标签的内部子元素li标签*/
+nav .logo{
+    /*设置属性将nav标签内部的ul子元素li标签排列在同一行上*/
+    display: inline-block;
+    /*指定行高*/
+    line-height: 50px;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+#a-logo{
+    text-decoration: none;
+}
+
+nav ul li a{
+    line-height: 50px;
+    text-decoration: none;
+    display: inline-block;
+    height: inherit;/*height设置为inherit是为了继承父类元素的高度，与父类元素的高度保持一致*/
+    color: white;
+}
+
+.logo{
+    float: left;
+}
+
+#banner .inner{
+    max-width: 300px;
+    text-align: center;
+    /*将div设置为左右居中样式*/
+    margin: 0 auto;
+    /*将div的position属性设置成relative属性就可以修改div的布局*/
+    position: relative;
+    top:50px;
+}
+
+/*将h1的margin值清0*/
+#banner .inner h1{
+    margin: 0;
+}
+
+button{
+    border: none;
+    background: #373259;
+    color: #eee;
+    padding: 10px;
+    font-size: 20px;
+    font-weight:bold;
+}
+
+#banner button{
+    padding: 14px 60px;
+}
+
+.span-more{
+    color:#373259;
+    font-size: 20px;
+    font-weight:bolder;
+}
+
+#banner .inner .more{
+    margin-top: 30px;
+}
+
+.sub-heading{
+    /*设置行高为30px*/
+    line-height: 30px;
+    margin: 30px;
+    font-size: 18px;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo a{
+    color: white;
+}
+
+.hr{
+    width: 100%;
+    margin: 0 auto;
+    height: 2px;
+}
+
+.green-section .hr{
+    background-color: #078494;
+    width: 60%;
+}
+.green-section{
+    text-align: center;
+    background-color: #00A1CB;
+    color:#fff;
+    padding: 100px 0;
+}
+.wapper{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.green-section .icon-group .icon{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background-color: #0D6F7C;
+    border-radius:50%;
+    margin: 20px;
+}
+
+.icon-group-img{
+    margin-top: 10px;
+}
+
+.icon-group{
+    margin-top: 20px;
+}
+
+.gray-section{
+    background-color: #252f34;
+    color:white;
+}
+
+.gray-section .img-section{
+    width: 45%;
+}
+
+.img-section img{
+    width: 100%;
+}
+
+.gray-section .text-section{
+    width: 55%;
+
+}
+
+.artical-preview > div{
+    float: left;
+    font-size: 0px;
+}
+
+/*清除artical-preview的原有的浮动样式*/
+.artical-preview{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.text-section{
+    position: relative;
+    top:68px;
+    left: 50px;
+}
+
+.text-section p{
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.text-section .sub-heading{
+    font-size: 22px;
+}
+
+.text-section *{
+    /*解决div里面文字溢出的方法*/
+    max-width: 90%;
+}
+
+.purple-section{
+    padding: 80px;
+    background-color: #3F3965;
+    color: white;
+    height: 650px;
+}
+
+
+.purple-section .heading-wrapper{
+    text-align: center;
+}
+
+.purple-section .hr{
+    color: #252f34;
+    width: 60%;
+    height: 2px;
+
+}
+
+p{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.card{
+    float: left;
+    width: 40%;
+    padding: 10px;
+    margin-left:40px;
+    text-align: center;
+    /*border: 1px solid white;*/
+    margin-top: 25px;
+}
+
+.h3{
+    font-size: 24px;
+}
+
+.card:first-child{
+    background:rgba(0,0,0,0.07);
+}
+
+.card:nth-child(2){
+     background:rgba(0,0,0,0.12);
+ }
+
+.card:nth-child(3){
+    background:rgba(0,0,0,0.17);
+}
+
+
+.card:nth-child(4){
+    background:rgba(0,0,0,0.22);
+}
+
+
+footer{
+    background-color: #333;
+    color: white;
+    min-height: 80px;
+    text-align: center;
+    padding: 70px;
+}
+ul{
+    /*去掉ul列表的边距，去掉白条*/
+    margin: 0;
+}
+
+ul.share-group{
+    width: 1080px;
+    display: block;
+    margin: 0 auto;
+}
+
+.share-group li{
+    display: inline-block;
+    padding: 10px;
+}
+
+.copy{
+    padding-top: 20px;
+}
+
+.main-warpper{
+    background: url("../img/banner.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+
+.mask{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+}
+
+/*设置侧边栏的样式*/
+#sidebar{
+    position: fixed;
+    background-color: #333;
+    color: white;
+    top:0;
+    right:-300px;
+    bottom: 0;
+    width: 300px;
+    padding: 20px 0;
+}
+
+/*音乐播放侧边栏样式*/
+#div-music{
+    position: fixed;
+    background-color: #333;
+    color: white;
+    top:10px;
+    left:-850px;
+
+    bottom:25px;
+    width: 60%;
+    padding: 10px 0;
+}
+
+#div-music2{
+    position: fixed;
+    background-color: #333;
+    color: white;
+    top:10px;
+    left:-850px;
+
+    bottom:25px;
+    width: 60%;
+    padding: 10px 0;
+}
+
+
+#div-music3{
+    position: fixed;
+    background-color: #333;
+    color: white;
+    top:10px;
+    left:-850px;
+
+    bottom:25px;
+    width: 60%;
+    padding: 10px 0;
+}
+
+#sidebar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size:18px;
+    font-family: 微软雅黑;
+    padding: 10px 30px;
+    display: inline-block;
+    width: 100%;
+}
+
+#sidebar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+.back-to-top{
+    position: fixed;/*将按钮固定在页面上*/
+    bottom: 30px;
+    right: 30px;
+}
+
+.play{
+    position: relative;
+    top:80px;
+    left:50px;
+}
+
+.more-music{
+    position: relative;
+    top:160px;
+    left: 420px;
+}
+
+#sidebar ul li span{
+    padding-left: 70px;
+}
+
+.music-btn{
+   margin-left: 350px;
+    width: 200px;
+}
